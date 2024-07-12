@@ -1,0 +1,26 @@
+.drawer {
+    position: relative;
+    z-index: 100;
+    float: right;
+    width: 40%;
+    height: 100vh;
+    display: block;
+    background-color: #000000;
+    /* overflow-y: auto; */
+    margin-bottom: 20vh;
+}
+
+.drawer ul {
+    height: 100%;
+    /* background-color: #a34e4e; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.drawer ul li {
+    color: white;
+    cursor: pointer;
+}
