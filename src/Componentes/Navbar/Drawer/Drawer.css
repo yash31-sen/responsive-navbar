@@ -6,13 +6,11 @@
     height: 100vh;
     display: block;
     background-color: #000000;
-    /* overflow-y: auto; */
     margin-bottom: 20vh;
 }
 
 .drawer ul {
     height: 100%;
-    /* background-color: #a34e4e; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;

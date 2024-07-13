@@ -1,0 +1,100 @@
+/* Slider.css */
+
+.slider-container {
+    width: 100%;
+    height: 80vh;
+    background-color: #8d87a1;
+    position: relative;
+    /* z-index: 999; */
+    display: flex;
+    justify-content: space-between;
+ }
+  
+  
+  .slide {
+    /* display: none; */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    display: block;
+    opacity: 1;
+    z-index: 10;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .slide-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 20;
+  }
+  
+  .prev-but ton {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  /* Animation for h2 typing effect */
+  /* @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  } */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .slide-heading {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slide-heading {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  

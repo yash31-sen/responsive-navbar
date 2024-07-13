@@ -13,7 +13,7 @@
    height: 80vh;
    background-color: #8d87a1;
    /* position: relative; */
-   /* z-index: 999; */
+   z-index: 999;
    display: flex;
    justify-content: space-between;
    position: absolute; /* Make the large div positioned absolutely relative to its parent (ul) */
